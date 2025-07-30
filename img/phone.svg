@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Transformed by: SVG Repo Mixer Tools -->
+
+<svg
+   fill="#004de6"
+   width="55.785828"
+   height="55.785599"
+   viewBox="0 0 48.812599 48.812399"
+   stroke="#004de6"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="phone.svg"
+   inkscape:export-filename="phone.svg"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   inkscape:version="1.4.2 (ebf0e940d0, 2025-05-08)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="14.394395"
+     inkscape:cx="27.927537"
+     inkscape:cy="27.892801"
+     inkscape:window-width="1920"
+     inkscape:window-height="1011"
+     inkscape:window-x="0"
+     inkscape:window-y="32"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg1" />
+  <defs
+     id="defs1" />
+  <g
+     id="SVGRepo_iconCarrier"
+     transform="translate(-3.5937,-3.5938)">
+    <path
+       d="M 27.9999,51.9062 C 41.0546,51.9062 51.9063,41.0547 51.9063,28 51.9063,14.9219 41.0312,4.0938 27.9765,4.0938 14.8983,4.0938 4.0937,14.9219 4.0937,28 c 0,13.0547 10.8281,23.9062 23.9062,23.9062 z M 21.8827,33.836 c -5.8125,-5.7891 -9.5156,-13.172 -5.1328,-17.5547 0.2578,-0.2579 0.5391,-0.5157 0.7969,-0.7735 1.3359,-1.2656 2.625,-1.1953 3.7734,0.4219 l 3.0469,4.3359 c 1.0312,1.5 0.7734,2.3438 -0.3281,3.5157 l -0.961,1.0547 c -0.3515,0.328 -0.2109,0.7734 -0.0468,1.0546 0.4453,0.8438 1.7109,2.3438 3.0702,3.7032 1.4063,1.4062 2.836,2.6015 3.7266,3.0937 0.3282,0.1875 0.7969,0.2344 1.1016,-0.0469 l 1.0078,-0.9609 c 1.125,-1.1016 2.0391,-1.3828 3.4922,-0.3516 2.0156,1.4297 3.2344,2.2735 4.4297,3.0938 1.4765,1.0781 1.8281,2.4141 0.3281,3.7734 -0.2578,0.2578 -0.4922,0.5391 -0.75,0.7969 -4.3828,4.3594 -11.7422,0.6562 -17.5547,-5.1562 z"
+       id="path1" />
+  </g>
+</svg>

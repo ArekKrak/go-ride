@@ -1,0 +1,724 @@
+/* IMPORTANT REMARKS: 
+- Footer contact elements to include the :before pseudo-class for the right icons placement. 
+- For images, consider ruleset for scaling images and videos from the board.
+- Adjust the linear gradient when ready so it doesn't reach the header background image. */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to top,rgba(255, 248, 20, 0.8) 82%, white, white, white);
+    font-family: "Urbanist", sans-serif;
+    font-size: 16px;
+    max-width: 1920px;
+}
+
+a:visited {
+    color: blue;
+}
+
+.navbar {
+    top: -3rem;
+}
+
+nav {
+    max-width: 60%;
+    font-size: 1.6rem;
+    left: 20%;
+}
+
+.navbar,
+nav {
+    position: relative;
+}
+
+nav ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+nav ul li a {
+    max-width: 25%;
+}
+
+nav ul li a p {
+    padding: 20px;
+    height: 100%;
+}
+
+nav ul li a p:active {
+    box-shadow: 0 10px 10px black;
+}
+
+nav ul,
+nav ul li a p,
+nav ul li a p:active {
+    border-radius: 10px 10px 40px 40px;
+}
+
+.intro figure {
+    margin: 40px auto;
+}
+
+.intro figure img {
+    width: 32%;
+}
+
+.img1 {
+    border-radius: 15px 0 0 15px;
+}
+
+.img3 {
+    border-radius: 0 15px 15px 0;
+}
+
+.mtb-biking {
+    width: 30%;
+    background-color: rgba(0, 0, 0, 1);
+    border-radius: 10px;
+    padding: 20px;
+    height: auto;
+    display: block;
+    font-size: 1.4rem;
+}
+
+.mtb-header img {
+    width: 90px;
+    height: 90px;
+    border-radius: 30px;
+}
+
+.mtb-info p span {
+    font-weight: 700;
+}
+
+.join-us a.button p,
+.mtb-info a.button p {
+    width: 200px;
+    border-radius: 20px;
+    border: 2px solid transparent;
+    padding: 10px 0;
+}
+
+nav ul li a,
+nav ul li a p,
+.mtb-biking,
+.join-us a.button p,
+.mtb-info a.button p {
+    color: rgba(255, 255, 255, 1);
+}
+
+nav ul,
+nav ul li a p:active,
+.join-us a.button p,
+.mtb-info a.button p {
+    background-color: rgba(0, 77, 230, 1);
+}
+
+.join-us a.button p:active,
+.mtb-info a.button p:active {
+    background-color: rgba(255, 255, 255, 1);
+    color: rgba(0, 77, 230, 1);
+    border-radius: 20px;
+}
+
+.mtb-info a.button p:active {
+    box-shadow: 5px 10px 10px white;
+    border: 2px solid black;
+}
+
+nav ul li a,
+.join-us a.button,
+.mtb-info a.button,
+.contact a,
+.footer-nav ul li a {
+    text-decoration: none;
+}
+
+/* LESSON LEARNED WHILE CREATING BUTTONS
+A button can be created and styled using just an <a> element and the content inside it (such as 
+a <p> or <span>). Wrapping the <a> tag in an additional container (like a <div>) may cause styling 
+or functionality issues, especially when working with JavaScript or CSS frameworks. 
+
+Also, since both <a> and <p> are inline elements by default, the width of the <a> cannot be 
+modified unless its display property is changed to something other than inline — for example, 
+inline-block or block.*/
+.mtb-info a.button {
+    display: inline-block;
+    width: 200px;
+    height: 43px;
+}
+
+.cycling figure {
+    width: 70%;
+}
+
+.cycling figure img {
+    width: 27%;
+    height: 25rem;
+    border-radius: 15px;
+}
+
+.join-us {
+    margin-bottom: 40px;
+}
+
+.navbar,
+.invitation,
+.join-us .slogan,
+.container {
+    max-width: 70%;
+}
+
+.join-us .images {
+    margin: 3em auto;
+}
+
+nav ul,
+.intro figure,
+.cycling figure,
+.join-us .images {
+    display: flex;
+    justify-content: center;
+}
+
+.join-us .images img {
+    width: 40%;
+    height: 27rem;
+    border-radius: 15px;
+}
+
+section,
+.overview,
+.beach,
+#header-button {
+    max-width: 80%;
+}
+
+.join-us a.button {
+    display: inline-block;
+    width: 200px;
+    height: 43px;
+}
+
+.join-us a.button p:active {
+    box-shadow: 10px 10px 10px black;
+    border: 2px solid white;
+}
+
+footer {
+    background: linear-gradient(to bottom, rgba(105, 181, 255, 1) 5%, white, white);
+    padding: 40px 0;
+}
+
+nav ul li,
+nav ul li a,
+.join-us a.button p,
+.mtb-info a.button p,
+.container {
+    text-align: center;
+}
+
+.container h1 {
+    font-size: 3rem;
+}
+
+body,
+section,
+.overview,
+.overview h2,
+.invitation,
+.intro figure img,
+.mtb-biking,
+.mtb-info a.button p,
+.cycling figure,
+.cycling figure img,        /* Reducing redundancy */
+.join-us .slogan,
+.beach,
+.join-us .images img,
+#header-button,
+.join-us a.button p,
+.container,
+.container .contact {
+    margin: 0 auto;
+}
+
+/* LESSON LEARNT USING PSEUDO-CLASSES
+:before - a box attached to the p element ( [before-box][p-box] ) must be of the same size as 
+the .svg (or any other) file.  */
+.container .contact p::before {
+    content: "";
+    display: inline-block;
+    margin-right: 0.75rem;
+    width: 56px;
+    height: 56px;
+}
+
+.container .contact p {
+    display: flex;
+    align-items: center;
+    font-size: 2.6rem;
+}
+
+.mtb-header h3,
+nav ul li a p,
+nav ul,
+.container .contact p {
+    margin: 0;
+}
+
+/* The size of the .svg file can be easily controlled setting the background-size parameter. */
+.container .contact p.tel::before {     
+    background-image: url(img/phone.svg);
+}
+
+.container .contact p.email::before {
+    background-image: url(img/email.svg);
+}
+
+.container .contact p.form::before {
+    background-image: url(img/form.svg);
+}
+
+.container .contact p.tel::before,
+.container .contact p.email::before,
+.container .contact p.form::before {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 90%;
+}
+
+.contact a {
+    color: rgba(0, 0, 0, 1);
+    padding: 9px 0;
+}
+
+.footer-nav ul {
+    list-style-type: none;
+    padding-left: 0;
+    max-width: 50%;
+    margin: 40px auto;
+}
+
+.mtb-biking .mtb-header,
+.container .contact,
+.footer-nav ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar,
+nav,
+nav ul li,
+nav ul li a,
+.overview,
+.invitation,
+.intro figure,
+.beach,
+#header-button,
+.container,
+.container .contact,
+.footer-nav ul {
+    width: 100%;
+}
+
+.footer-nav ul li a {
+    color: rgba(0, 0, 0, 1);
+}
+
+p,
+span,
+.footer-nav ul li a {
+    font-size: 1.1rem;
+}
+
+.footer-nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.copyright {
+    margin-top: 80px;
+}
+
+@media only screen and (max-width: 1485px) {
+
+    .container .contact {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .container .contact p {
+        margin: 10px 0;
+    }
+}
+
+@media only screen and (max-width: 1279px) {
+
+    .mtb-biking {
+        display: grid;
+        width: 60%;
+    }
+
+    .mtb-biking .mtb-header {
+        width: 100%;
+        max-width: 311.55px;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+    }
+
+    .mtb-info {
+        display: block;
+        justify-self: center;
+    }
+
+    .mtb-info a.button {
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (min-width: 940px) and (max-width: 1825px) {
+
+    .container .contact p {
+        font-size: 2rem;
+    }
+
+    .container .contact p.tel::before,
+    .container .contact p.email::before,
+    .container .contact p.form::before {
+        background-size: 80%;
+    }
+}
+
+@media only screen and (min-width: 940px) and (max-width: 1485px) {
+
+    body {
+        background: linear-gradient(to top,rgba(255, 248, 20, 0.8) 82%, white, white);
+    }
+
+    .footer-nav {
+        margin-top: 40px;
+    }
+
+    .footer-nav ul {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (min-width: 940px) and (max-width: 1279px) {
+
+    .cycling figure {
+        width: 65%;
+    }
+
+    .cycling figure img {
+        width: 26%;
+        height: 16rem;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (min-width: 720px) and (max-width: 939px) {
+
+    body {
+        background: linear-gradient(to top,rgba(255, 248, 20, 0.8) 90%, white, white);
+    }
+
+    .navbar {
+        top: -3rem;
+    }
+
+    nav ul li a p {
+        font-size: .9rem;
+    }
+
+    .intro figure {
+        flex-direction: column;
+    }
+
+    .intro figure img {
+        width: 70%;
+        margin: 5px auto
+    }
+
+    .img1 {
+        border-radius: 15px 15px 0 0;
+    }
+
+    .img3 {
+        border-radius: 0 0 15px 15px;
+    }
+
+    .cycling figure img {
+        height: 15rem;
+    }
+
+    .cycling figure,
+    .join-us .images {
+        width: 85%;
+    }
+
+    .container {
+        max-width: 100%;
+    }
+
+    .container .contact p {
+        font-size: 1.5rem;
+    }
+
+    .container .contact p.tel::before,
+    .container .contact p.email::before,
+    .container .contact p.form::before {
+        background-size: 60%;
+    }
+
+    nav,
+    .footer-nav ul {
+        max-width: 70%;
+    }
+
+    .footer-nav ul li a {
+        font-size: .9rem;
+    }
+}
+
+@media only screen and (max-width: 719px) {
+
+    body {
+        background: linear-gradient(to top,rgba(255, 248, 20, 0.8) 90%, white, white);
+    }
+
+    header img {
+        margin: 0;
+    }
+    
+    .navbar  {
+        margin: 8.75% auto 0 auto;
+    }
+
+    nav {
+        width: 100%;
+        left: 0;
+        margin: 0 auto;
+    }
+
+    nav ul {
+        background-color: transparent;
+        display: block;
+        border-radius: 0;
+    }
+
+    nav ul li {
+        background-color: rgba(0, 77, 230, 1);
+        margin: 5px;
+        border-radius: 10px;
+    }
+
+    nav ul li a p {
+        font-size: 1.2rem;
+        padding: 15px 30px;
+        border: 2px solid transparent;
+    }
+
+    nav ul li a p:active {
+        background-color: rgba(255, 255, 255, 1);
+        color: rgba(0, 77, 230, 1);
+        border-radius: 10px;
+        border: 2px solid black;
+    }
+
+    .overview {
+        margin-top: 40px;
+    }
+
+    nav,
+    .overview {
+        max-width: 90%;
+    }
+
+    .intro figure {
+        flex-direction: column;
+    }
+
+    .intro figure img {
+        margin: 5px auto
+    }
+
+    .img1 {
+        border-radius: 15px 15px 0 0;
+    }
+
+    .img3 {
+        border-radius: 0 0 15px 15px;
+    }
+
+    nav ul li a p:active,
+    .join-us a.button p:active,
+    .mtb-info a.button p:active {
+        box-shadow: none;
+    }
+
+    .intro figure img,
+    .cycling figure {
+        width: 90%;
+    }
+
+    .cycling figure img {
+        width: 50%;
+        height: 19rem;
+        margin: 20px;
+    }
+
+    .cycling #middle-img {
+        display: none;
+    }
+
+    .join-us a.button p:active {
+        border: 2px solid black;
+    }
+
+    .container .contact p {
+        font-size: 1.5rem;
+    }
+
+    .container .contact p.tel::before,
+    .container .contact p.email::before,
+    .container .contact p.form::before {
+        background-size: 60%;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1279px) {
+
+    .join-us .images img {
+        width: 43%;
+        height: 18rem;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 719px) {
+
+    .container h1,
+    .container p {
+        margin: 20px auto;
+    }
+
+    .container {
+        max-width: 100%;
+    }
+
+    .container h1,
+    .container p,
+    .footer-nav ul {
+        max-width: 90%;
+    }
+
+    .footer-nav ul li a {
+        font-size: .8rem;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+
+    header img#desktop {
+        width: 100%;
+        margin: 0;
+        height: 70%;
+    }
+
+    header img#mobile {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 599px) {
+
+    header img#desktop {
+        display: none;
+    }
+
+    section {
+        margin: 0 auto;
+    }
+
+    header img#mobile,
+    .overview {
+        width: 100%;
+    }
+
+    .invitation {
+        margin-top: 0;
+    }
+
+    .cycling figure img {
+        margin: 10px;
+    }
+
+    .join-us .images {
+        margin: 1em auto;
+    }
+
+    .join-us .images img {
+        height: 15rem;
+    }
+
+    .container h1 {
+        font-size: 1.7rem;
+    }
+
+    .container h1,
+    .container p {
+        margin: 20px auto;
+    }
+
+    .overview,
+    .invitation,
+    .join-us .slogan,
+    .container h1,
+    .container p {
+        max-width: 90%;
+    }
+
+    .container .contact {
+        align-items: flex-start;
+    }
+
+    .container .contact p {
+        font-size: 1.3rem;
+        margin: 0;
+    }
+
+    .container .contact p.tel::before,
+    .container .contact p.email::before,
+    .container .contact p.form::before {
+        background-size: 50%;
+    }
+
+    section,
+    .beach,
+    .container {
+        max-width: 100%;
+    }
+
+    .footer-nav ul {
+        display: block;
+        line-height: 3em;
+        margin-left: 20px;
+        justify-content: flex-start;
+    }
+
+    .footer-nav ul li {
+        text-align: left;
+    }
+
+    .footer-nav ul li a {
+        font-size: 1rem;
+    }
+
+    .copyright {
+        margin-top: 40px;
+    }
+}
