@@ -192,9 +192,15 @@ nav ul li a,
     width: 100%;
 }
 
+.contact-form a {
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+}
+
 .contact-form img {
     width: 70px;
-    min-height: 70px;
+    height: 70px;
 }
 
 form {
@@ -530,9 +536,14 @@ select {
         margin-top: 40px;
     }
 
+    .contact-form a {
+        margin: 0 auto;
+    }
+
+    .contact-form a,
     .contact-form img {
         width: 40px;
-        min-height: 40px;
+        height: 40px;
     }
 
     form {
