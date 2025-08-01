@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Go Ride!</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="img/bicycle.ico" rel="shortcut icon" type="image/x-icon">
+        <link href="form.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900" rel="stylesheet">
+    </head>
+
+    <body>
+        <!-- The Header section with the navbar partially overlapping the banner -->
+        <header>
+            <img id="desktop" src="img/cycling-banner.jpeg" alt="Cycling Banner">
+            <img id="mobile" src="img/cycling-banner-mobile.png" alt="Cycling Banner Mobile">
+            <div class="navbar">
+                <nav>
+                    <ul>
+                        <li><a href="#news-and-events"><p>News &amp; Events</p></a></li>
+                        <li><a href="#upcoming-trips"><p>Upcoming Trips</p></a></li>
+                        <li><a href="#about-us"><p>About Us</p></a></li>
+                        <li><a href="#contact-us"><p>Contact Us</p></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <!-- The Main Section -->
+        <main>
+            <div class="contact-form">
+                <a href="index.html">
+                    <img src="img/home.svg" alt="Home">
+                </a>
+                <form>
+                    <h2>Please contact us using the form below.</h2>
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name"><br>
+                    <label for="email">Email</label>
+                    <input type="text" id="email"><br>
+                    <label for="locality">Select your local hub</label>
+                    <select name="locality">
+                        <option>Colchester</option>
+                        <option>Dalby Forest</option>
+                        <option>Manchester</option>
+                        <option>Brighton &amp; Hove</option>
+                        <option>Fort William, Scotland</option>
+                        <option>Bristol</option>
+                        <option>Edinburgh</option>
+                        <option>Swansea, Wales</option>
+                        <option>Belfast, Northern Ireland</option>
+                        <option>Peak District</option>
+                    </select><br>
+                    <textarea id="textarea" rows="10" cols="50"></textarea>
+                    <input type="submit" id="submit" value="Submit">
+                </form>
+            </div>
+        </main>
+        <!-- The Footer Section -->
+        <footer>
+            <div class="container">
+                <h1>Contact Us</h1>
+                <p>We cover the whole of the UK, with our headquarters based in Colchester, Essex.</p>
+                <div class="contact">
+                    <p class="tel"><a href="tel:01510571301">01510 571301</a></p>
+                    <p class="email"><a href="mailto:go.ride@gmail.com">go.ride@united-cyclists.com</a></p>
+                    <p class="form"><a>Send A Message</a></p>
+
+                    <!-- The form below will be created and styled when I have more free time. -->
+
+                    <!-- <form id="form">
+                        <input type="text" placeholder="Your Name">
+                        <input type="email" placeholder="Your Email">
+                        <textarea placeholder="Your Message"></textarea>
+                        <button type="submit">Send</button>
+                    </form> -->
+                </div>
+                <div class="footer-nav">
+                    <ul>
+                        <li><a href="#about-us">About Us</a></li>
+                        <li><a href="#accessibility">Accessibility</a></li>
+                        <li><a href="#terms-and-conditions">Terms &amp; Conditions</a></li>
+                        <li><a href="#privacy-policy">Privacy Policy</a></li>
+                        <li><a href="#cookies">Cookies</a></li>
+                    </ul>
+                </div>
+                <div class="copyright">
+                    <p>&copy; 2025 Go Ride! UK</p>
+                </div>
+            </div>
+        </footer>
+    </body>
+
+</html>
