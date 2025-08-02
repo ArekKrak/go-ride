@@ -43,6 +43,8 @@ The project brief came from the Codecademy **Responsive Club Website** challenge
 project/
 ├── index.html
 ├── styles.css
+├── form.html
+├── form.css
 ├── img/
 │   ├── cycling-banner.jpeg
 │   ├── cycle1.jpg
