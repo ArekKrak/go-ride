@@ -40,7 +40,7 @@ The project brief came from the Codecademy **Responsive Club Website** challenge
 ## Project Structure
 
 ```
-project/
+go-ride/
 ├── index.html
 ├── styles.css
 ├── form.html
