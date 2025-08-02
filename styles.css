@@ -184,8 +184,8 @@ nav ul,
 }
 
 .join-us .images img {
-    width: 40%;
-    height: 27rem;
+    width: 30%;
+    height: 29rem;
     border-radius: 15px;
 }
 
@@ -419,6 +419,11 @@ span,
         height: 16rem;
         margin: 0 auto;
     }
+
+    .join-us .images img {
+        width: 38%;
+        height: 25rem;
+    }
 }
 
 @media only screen and (min-width: 720px) and (max-width: 939px) {
@@ -459,6 +464,11 @@ span,
     .cycling figure,
     .join-us .images {
         width: 85%;
+    }
+
+    .join-us .images img {
+        width: 44%;
+        height: 21rem;
     }
 
     .container {
@@ -591,15 +601,12 @@ span,
     }
 }
 
-@media only screen and (min-width: 600px) and (max-width: 1279px) {
+@media only screen and (min-width: 600px) and (max-width: 719px) {
 
     .join-us .images img {
-        width: 43%;
-        height: 18rem;
+        width: 44%;
+        height: 21rem;
     }
-}
-
-@media only screen and (min-width: 600px) and (max-width: 719px) {
 
     .container {
         max-width: 100%;
@@ -662,6 +669,7 @@ span,
     }
 
     .join-us .images img {
+        width: 44%;
         height: 15rem;
     }
 
